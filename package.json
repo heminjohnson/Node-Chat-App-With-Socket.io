@@ -15,5 +15,8 @@
   "bugs": {
     "url": "https://github.com/heminjohnson/Node-Chat-App-With-Socket.io/issues"
   },
-  "homepage": "https://github.com/heminjohnson/Node-Chat-App-With-Socket.io#readme"
+  "homepage": "https://github.com/heminjohnson/Node-Chat-App-With-Socket.io#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
 }

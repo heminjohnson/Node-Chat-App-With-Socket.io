@@ -1,0 +1,22 @@
+{
+  "name": "node-chat-app-with-socket.io",
+  "version": "1.0.0",
+  "description": "",
+  "main": "index.js",
+  "scripts": {
+    "test": "echo \"Error: no test specified\" && exit 1"
+  },
+  "repository": {
+    "type": "git",
+    "url": "git+https://github.com/heminjohnson/Node-Chat-App-With-Socket.io.git"
+  },
+  "author": "Hemin Johnson",
+  "license": "MIT",
+  "bugs": {
+    "url": "https://github.com/heminjohnson/Node-Chat-App-With-Socket.io/issues"
+  },
+  "homepage": "https://github.com/heminjohnson/Node-Chat-App-With-Socket.io#readme",
+  "dependencies": {
+    "express": "^4.16.4"
+  }
+}

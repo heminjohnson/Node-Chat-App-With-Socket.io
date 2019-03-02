@@ -1,6 +1,6 @@
 const expect = require('expect')
 
-const {Users} = require('./user')
+const {Users} = require('./users')
 
 describe('Users', () => {
 	it('should add new user', () => {
@@ -12,6 +12,6 @@ describe('Users', () => {
 		}
 
 		users.addUser(user.id, user.name, user.room)
-		expect(users.user).toEqual([user])
+		expect(users.users).toEqual([user])
 	})
 })

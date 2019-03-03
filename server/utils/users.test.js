@@ -3,6 +3,25 @@ const expect = require('expect')
 const {Users} = require('./users')
 
 describe('Users', () => {
+	var users
+
+	beforeEach(() => {
+		users = new Users()
+		users.users = [{
+			id: 1,
+			name: 'Mike',
+			room: 'Office'
+		}, {
+			id: 2,
+			name: 'Hemin',
+			room: 'Home'
+		}, {
+			id: 3,
+			name: 'Johnson',
+			room: 'Office'
+		}]
+	})
+
 	it('should add new user', () => {
 		var users = new Users()
 		var user = {
@@ -13,5 +32,17 @@ describe('Users', () => {
 
 		users.addUser(user.id, user.name, user.room)
 		expect(users.users).toEqual([user])
+	})
+
+	it('should return names for room Office', () => {
+		var userList = users.getUserList('Office')
+
+		expect(userList).toEqual(['Mike', 'Johnson'])
+	})
+
+	it('should return names for room Home', () => {
+		var userList = users.getUserList('Home')
+
+		expect(userList).toEqual(['Hemin'])
 	})
 })

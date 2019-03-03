@@ -51,17 +51,17 @@ describe('Users', () => {
 	})
 
 	it('should find user', () => {
-		var userId = '2'
+		var userId = 2
 		var user = users.getUser(userId)
 
 		expect(user.id).toBe(userId)
 	})
 
 	it('should not find user', () => {
-		var userId = '99'
+		var userId = 99
 		var user = users.getUser(userId)
 
-		expect(user.id).toNotExist()
+		expect(user).toBeFalsy()
 	})
 
 	it('should return names for room Office', () => {
